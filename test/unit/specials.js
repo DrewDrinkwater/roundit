@@ -242,4 +242,25 @@ describe('round.js half a cup of tea tests:', function () {
     it('infinite rounds 0.5 to 0.5 at 1dp', function () {
         expect(round.infinite(0.5, 1)).to.equal(0.5);
     });
+});
+
+describe('round.js other tests:', function () {
+    it('nearest rounds 1.5000001 to 2.0 at 0dp', function () {
+        expect(round.nearest(1.5000001, 0)).to.equal(2);
+    });
+    it('nearest rounds 1.5000001 to 1.5 at 1dp', function () {
+        expect(round.nearest(1.5000001, 1)).to.equal(1.5);
+    });
+    it('nearest rounds 1.5000001 to 1.50 at 2dp', function () {
+        expect(round.nearest(1.5000001, 2)).to.equal(1.5);
+    });
+    it('nearest rounds 1.999999 to 2 at 0dp', function () {
+        expect(round.nearest(1.999999, 0)).to.equal(2);
+    });
+        it('nearest rounds 1.999999 to 2 at 1dp', function () {
+        expect(round.nearest(1.999999, 1)).to.equal(2);
+    });
+        it('nearest rounds 1.999999 to 2 at 2dp', function () {
+        expect(round.nearest(1.999999, 2)).to.equal(2);
+    });
 }); 
