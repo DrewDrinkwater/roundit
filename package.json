@@ -1,0 +1,44 @@
+{
+  "name": "roundit",
+  "version": "1.0.0",
+  "description": "simple rounding library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive test/unit"
+  },
+  "keywords": [
+    "round",
+    "floor",
+    "ceil",
+    "fix"
+  ],
+  "author": {
+    "name": "drew drinkwater",
+    "email": "drewdrinkwater@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "drew drinkwater",
+      "email": "drewdrinkwater@gmail.com"
+    }
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrewDrinkwater/roundit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DrewDrinkwater/roundit/issues",
+    "email": "drewdrinkwater@gmail.com"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0"
+  }
+}
