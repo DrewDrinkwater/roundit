@@ -5,9 +5,13 @@ A quick and simple rounding library, without resorting to string conversion, man
 
 Usage:
 ```javascript
-  var round = require('./roundit');
+  var round = require('roundit');
 
   console.log('Round 5.125 to Nearest 2dp: ' + round.nearest(5.125, 2));
+  console.log('Round 5.125 to Ceil 2dp: ' + round.ceil(5.125, 2));
+  console.log('Round 5.125 to Floor 2dp: ' + round.floor(5.125, 2));
+  console.log('Round 5.125 to Fix 2dp: ' + round.fix(5.125, 2));
+  console.log('Round 5.125 to Infinite 2dp: ' + round.infinite(5.125, 2));
 ```  
 
 #### Rounding Options
